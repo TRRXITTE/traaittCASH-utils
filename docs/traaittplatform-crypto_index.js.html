@@ -1252,7 +1252,7 @@ function loadNativeAddon () {
 
 function loadNativeJS () {
   try {
-    const Self = require('./traaittcash-crypto.js')()
+    const Self = require('./@trrxitte/traaittcash-crypto.js')()
 
     if (Object.getOwnPropertyNames(Self).length === 0) throw new Error('Could not load')
 
@@ -1271,7 +1271,7 @@ function loadWASMJS () {
   if (typeof window === 'undefined') return false
 
   try {
-    const Self = require('./traaittcash-crypto-wasm.js')()
+    const Self = require('./@trrxitte/traaittcash-crypto-wasm.js')()
 
     if (Object.getOwnPropertyNames(Self).length === 0) throw new Error('Could not load')
 
